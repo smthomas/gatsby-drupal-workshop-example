@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `My News Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     // `gatsby-plugin-react-helmet`,
@@ -14,12 +14,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `@chakra-ui/gatsby-plugin`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        "name": "images",
-        "path": "./src/images/"
+        name: "images",
+        path: "./src/images/",
       },
-      __key: "images"
+      __key: "images",
     },
     {
       resolve: `gatsby-source-drupal`,
@@ -31,7 +31,8 @@ module.exports = {
           password: process.env.BASIC_AUTH_PASSWORD,
         },
         fastBuilds: true,
+        skipFileDownloads: true,
       },
     },
-  ]
+  ],
 };
