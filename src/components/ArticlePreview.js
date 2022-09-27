@@ -53,7 +53,7 @@ const ArticlePreview = ({ title, path, image, alt, summary, tags }) => (
               letterSpacing="wider"
               fontWeight="semibold"
             >
-              <Badge colorScheme="orange" variant="solid" alignSelf="flex-start">
+              <Badge colorScheme="blue" variant="solid" alignSelf="flex-start">
                 Article
               </Badge>
               <HStack
@@ -61,9 +61,9 @@ const ArticlePreview = ({ title, path, image, alt, summary, tags }) => (
                 spacing="3"
                 color={mode("gray.600", "gray.400")}
               >
-               {tags.map((tag) =>  (
-                <Box key={tag.id}>{tag.name}</Box>
-               ))}
+                {tags.map((tag) => (
+                  <Box key={tag.id}>{tag.name}</Box>
+                ))}
               </HStack>
             </Stack>
             <Link to={`/articles${path}`}>
