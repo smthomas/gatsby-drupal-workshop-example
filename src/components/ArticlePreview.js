@@ -53,7 +53,7 @@ const ArticlePreview = ({ title, path, image, alt, summary, tags }) => (
               letterSpacing="wider"
               fontWeight="semibold"
             >
-              <Badge colorScheme="blue" variant="solid" alignSelf="flex-start">
+              <Badge colorScheme="orange" variant="solid" alignSelf="flex-start">
                 Article
               </Badge>
               <HStack

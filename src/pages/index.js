@@ -6,7 +6,6 @@ import {
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Container from "../components/Container";
-//import Meta from "../components/Meta";
 import ArticlePreview from "../components/ArticlePreview";
 
 const Home = ({ data }) => {
@@ -14,7 +13,6 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Meta title="My Blog Site" description="An example blog site stareter." /> */}
       <Box
         pt={30}
         width={`100%`}
